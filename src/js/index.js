@@ -1,15 +1,6 @@
-const sections = document.querySelectorAll('section')
+import { fromToBy } from './utils'
 
-/**
- * Fill an array from a number, to a number, by the specified increment
- */
-const fromToBy = (from, to, by) => {
-  const result = []
-  for (let i = from; i <= to; i += by) {
-    result.push(i)
-  }
-  return result
-}
+const sections = document.querySelectorAll('section')
 
 const observer = new IntersectionObserver(
   /* `entries` is an array of all the thresholds we've crossed
